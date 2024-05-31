@@ -22,6 +22,7 @@ This project was created using `bun init` in bun v1.1.10. [Bun][11] is a fast al
 mkdir -p ~/Work/bun/bun-elysia-api
 cd ~/Work/bun/bun-elysia-api
 bun init
+bun add elysia
 ```
 
 ## Acknowledgements
