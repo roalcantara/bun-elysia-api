@@ -6,7 +6,11 @@
     "dev": "bun --watch index.ts",
     "build": "bun build index.ts",
     "start": "NODE_ENV=production bun index.ts",
-    "test": "bun test"
+    "test": "bun test",
+    "docker:build": "docker build -t bun_api .",
+    "docker:run": "docker run --name bun_api_container -p 3000:3000 -d bun_api",
+    "docker:up": "npm run docker:build && npm run docker:run",
+    "docker:shutdown": "docker stop bun_api_container && docker rm bun_api_container"
   },
   "devDependencies": {
     "@types/bun": "1.1.3"

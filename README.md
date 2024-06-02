@@ -15,6 +15,7 @@ This project was created using `bun init` in bun v1.1.10. [Bun][11] is a fast al
 - [Divenv][7]
 - [pre-commit][8]
 - [gitlint][9]
+- [Docker][13]
 
 ### How to
 
@@ -23,6 +24,19 @@ mkdir -p ~/Work/bun/bun-elysia-api
 cd ~/Work/bun/bun-elysia-api
 bun init
 bun add elysia
+```
+
+## Usage
+
+```sh
+Run `bun dev` to start the development server
+Run `bun build` to build the project
+Run `bun start` to start the production server
+Run `bun test` to run the tests
+Run `bun run docker:build` to build the docker image
+Run `bun run docker:run` to run the docker container
+Run `bun run docker:up` to build and run the docker container
+Run `bun run docker:shutdown` to stop and remove the docker container
 ```
 
 ## Acknowledgements
@@ -54,3 +68,4 @@ The project is available as open source under the terms of the [MIT][1] [License
 [10]: https://conventionalcommits.org 'Conventional Commits'
 [11]: https://bun.sh 'Bun - A fast all-in-one JavaScript runtime'
 [12]: https://youtu.be/wyQ3lWDAwzs 'How to Master Bun Api | Tutorial'
+[13]: https://docker.com 'Docker - Build, Share and Run Any App, Anywhere'
